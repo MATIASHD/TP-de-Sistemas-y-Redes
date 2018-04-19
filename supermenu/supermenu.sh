@@ -13,7 +13,7 @@
 # VARIABLES GLOBALES
 #------------------------------------------------------
 proyectoActual="/home/andrew/Documents/repo_GitLab/2013_SoftwareEnginneringAndComplexity_BestPaperAward";
-proyectos="/home/andrew/Documents/repo_GitLab/repos.txt";
+proyectos="/repositorio.txt";
 
 #------------------------------------------------------
 # DISPLAY MENU
@@ -28,10 +28,10 @@ imprimir_menu () {
     echo -e "\t\t Opciones:";
     echo "";
     echo -e "\t\t\t a.  Ver estado del proyecto";
-    echo -e "\t\t\t b.  ";
-    echo -e "\t\t\t c.  ";
-    echo -e "\t\t\t d.  ";        
-    echo -e "\t\t\t e.  ";        
+    echo -e "\t\t\t b.  Verificar el estado de un programa";
+    echo -e "\t\t\t c.  Buscar Nombre + extension";
+    echo -e "\t\t\t d.  Buscar linea donde aparecer la palabra";        
+    echo -e "\t\t\t e.  Monitor de proceso";        
     echo -e "\t\t\t q.  Salir";
     echo "";
     echo -e "Escriba la opción y presione ENTER";
@@ -87,8 +87,8 @@ a_funcion () {
 }
 
 b_funcion () {
-           imprimir_encabezado "\tOpción b";
-    #completar
+        imprimir_encabezado "\tVerificar el estado de un programa";
+        decidir "cat $proyectos "
 }
 
 c_funcion () {
